@@ -101,14 +101,17 @@ body,
 }
 
 .logo,
-.binding-mode,
+.binding-mode {
+  margin-right: 20px;
+}
+
 .tiling-direction,
 .paused-button,
 .network,
 .memory,
 .cpu,
 .battery {
-  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .workspaces {
