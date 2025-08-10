@@ -1,6 +1,6 @@
 # Zebar Work-Play Pack
 
-A fork of the starter pack that supports GlazeWM for both work and play.
+Fork of the starter pack that supports GlazeWM for both work and play.
 
 ## Widgets
 
