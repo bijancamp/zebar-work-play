@@ -15,7 +15,7 @@
       "focused": false,
       "resizable": true,
       "transparent": true,
-      "includeFiles": ["*.html", "*.css"],
+      "includeFiles": ["*.html", "*.css", "*.js"],
       "caching": {
         "defaultDuration": 604800,
         "rules": []

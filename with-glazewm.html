@@ -13,6 +13,24 @@
       integrity="sha256-aS0B0wnsaDByLfE16h4MDCP1fQFccysd1YWOcV+gbBo="
       crossorigin="anonymous"
     ></script>
+    <script src="./config.js"></script>
+    <script>
+      // Set CSS variables based on mode
+      function setThemeVariables() {
+        const root = document.documentElement;
+        const mode = CONFIG?.mode || 'play';
+
+        if (mode === 'play') {
+          root.style.setProperty('--current-icon-color-dark', 'var(--icon-color-dark-play)');
+          root.style.setProperty('--current-workspaces-background-color-dark', 'var(--workspaces-background-color-dark-play)');
+        } else {
+          root.style.setProperty('--current-icon-color-dark', 'var(--icon-color-dark-work)');
+          root.style.setProperty('--current-workspaces-background-color-dark', 'var(--workspaces-background-color-dark-work)');
+        }
+      }
+
+      setThemeVariables();
+    </script>
   </head>
   <body>
     <div id="root"></div>

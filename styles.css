@@ -12,13 +12,17 @@
   --text-color-dark: rgba(255 255 255 / 95%);
 
   --icon-color-light: LightSteelBlue;
-  --icon-color-dark: rgb(255 67 67 / 95%);
+  --icon-color-dark-play: rgba(255 67 67 / 95%);
+  --icon-color-dark-work: rgba(115 130 175 / 95%);
 
   --background-color-light: rgba(238 238 238 / 90%);
   --background-color-dark: linear-gradient(
     rgb(0 0 0 / 90%),
     rgb(5 2 20 / 85%)
   );
+
+  --workspaces-background-color-dark-play: rgba(255 67 67 / 70%);
+  --workspaces-background-color-dark-work: rgba(75 115 255 / 50%);
 }
 
 @media (prefers-color-scheme: light) {
@@ -41,7 +45,7 @@
   }
 
   i {
-    color: var(--icon-color-dark);
+    color: var(--current-icon-color-dark, var(--icon-color-dark-play));
   }
 
   #root {
@@ -134,7 +138,7 @@ body,
 
   &.focused,
   &:hover {
-    background: rgb(255 67 67 / 70%);
+    background: var(--current-workspaces-background-color-dark, var(--workspaces-background-color-dark-play));
   }
 }
 
