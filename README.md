@@ -2,6 +2,8 @@
 
 Fork of the starter pack that supports GlazeWM for both work and play.
 
+![Screenshot of work-play theme](./resources/preview-image.png)
+
 ## Widgets
 
 ### `with-glazewm`
